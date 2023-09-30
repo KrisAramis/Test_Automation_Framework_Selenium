@@ -1,31 +1,24 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using WebApplicationCore.Browser;
-using WebApplicationWeb.Helper;
+using WebApplicationCore.Helper;
 using WebApplicationWeb;
 
 namespace WebApplicationTests;
 
-public class Tests
+public class LandingPageTests:BaseTest
 {
+    private EpamLandingPage _epamLandingPage;
 
     [SetUp]
-    public void BrowserSetup()
+    public void SetUp()
     {
-        BrowserFactory.Browser.GotToUrl(TestSettings.ApplicationUrl);
-        BrowserFactory.Browser.Maximize();
+        _epamLandingPage = new EpamLandingPage();
     }
     
     [Test]
     public void VerifyLandingPageIsLoading()
     {
-        //to be added
+        Assert.IsTrue(_epamLandingPage.Title.Displayed,"error");
     }
-    
-    [TearDown]
-    public void TearDown()
-    {
-        BrowserFactory.Browser.Close();
-        BrowserFactory.Browser.Quit();
-    } 
 }

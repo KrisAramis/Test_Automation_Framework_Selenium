@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
+using WebApplicationCore.Screenshoter;
 
 namespace WebApplicationCore.Browser;
 
@@ -21,7 +22,23 @@ public class Browser
         {
             ExecuteScript("arguments[0].scrollIntoView(true);", element);
         }
+        #region Screenshoot
 
+        public void SaveScreenshot(string screenshotName, string folderPath)
+        {
+            try
+            {
+                Logger.Info("Generating of screenshot started.");
+                ScreenshotTaker.TakesScreenshot(_driver, screenshotName, folderPath);
+                Logger.Info("Generating of screenshot finished.");
+            }
+            catch (Exception ex)
+            {
+                Logger.Info($"Failed to capture screenshot. Exception message {ex.Message}");
+            }
+        }
+
+        #endregion
         public void ScrollBy(int px)
         {
             ExecuteScript($"window.scrollBy(0, {px});");
