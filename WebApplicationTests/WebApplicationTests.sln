@@ -8,6 +8,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationUtilities", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationWeb", "WebApplicationWeb\WebApplicationWeb.csproj", "{C906D031-FA68-4689-99AB-15A66C8C63D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.API1", "WebApplication.API1\WebApplication.API1.csproj", "{814B5C85-3501-4B40-9EED-C54849C24B22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.API.Tests1", "WebApplication.API.Tests1\WebApplication.API.Tests1.csproj", "{F18EA9A0-B132-40A4-8D36-7394BE4A78A8}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +35,13 @@ Global
 		{C906D031-FA68-4689-99AB-15A66C8C63D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C906D031-FA68-4689-99AB-15A66C8C63D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C906D031-FA68-4689-99AB-15A66C8C63D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{814B5C85-3501-4B40-9EED-C54849C24B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814B5C85-3501-4B40-9EED-C54849C24B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814B5C85-3501-4B40-9EED-C54849C24B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814B5C85-3501-4B40-9EED-C54849C24B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18EA9A0-B132-40A4-8D36-7394BE4A78A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18EA9A0-B132-40A4-8D36-7394BE4A78A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18EA9A0-B132-40A4-8D36-7394BE4A78A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18EA9A0-B132-40A4-8D36-7394BE4A78A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
