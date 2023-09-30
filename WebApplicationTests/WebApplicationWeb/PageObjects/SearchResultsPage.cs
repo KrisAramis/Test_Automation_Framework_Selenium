@@ -1,9 +1,9 @@
 using OpenQA.Selenium;
+using WebApplicationCore.Browser;
 
 namespace WebApplicationWeb;
 
 public class SearchResultsPage
 {
-    private IWebDriver _driver;
-    public List <IWebElement> SearchResults => _driver.FindElements(By.TagName("article")).ToList();
+    public List <IWebElement> SearchResults => BrowserFactory.Browser.FindElements(By.TagName("article")).ToList();
 }
